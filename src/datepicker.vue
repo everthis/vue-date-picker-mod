@@ -114,6 +114,7 @@
             type="text"
             :style="styleObj"
             :readonly="readonly"
+            :name="name"
             :value="value"
             @click="show = !show">
         <div class="picker-wrap" v-show="show">
@@ -154,6 +155,7 @@
             width: { type: String, default: '238px' },
             readonly: { type: Boolean, default: false },
             value: { type: String, default: '' },
+            name: { type: String, default: '' },
             format: { type: String, default: 'YYYY-MM-DD' }
         },
         data () {
